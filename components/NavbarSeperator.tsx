@@ -10,6 +10,7 @@ function NavbarSeperator() {
           borderBottom: "0.25px solid",
           borderImage:
             "linear-gradient(to right, #FFFFFF 58.85%, rgba(255, 255, 255, 0) 100%) 1",
+          opacity: "0.5",
         }}
       ></div>
       <div
@@ -22,6 +23,7 @@ function NavbarSeperator() {
           borderBottom: "0.25px solid",
           borderImage:
             "linear-gradient(to left, #FFFFFF 58.85%, rgba(255, 255, 255, 0) 100%) 1",
+          opacity: "0.5",
         }}
       ></div>
     </div>
