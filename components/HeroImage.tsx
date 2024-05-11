@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import First from "@/public/first_slide.svg";
 
-function HeroImage() {
+function HeroImage({ imgSrc }: { imgSrc: string }) {
   return (
     <div className="relative h-[600px]">
       <div className="grid grid-cols-2 h-full">
@@ -12,7 +11,7 @@ function HeroImage() {
         <div></div>
       </div>
       <Image
-        src={First}
+        src={imgSrc}
         alt="1"
         className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
         width={520}

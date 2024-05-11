@@ -8,7 +8,7 @@ const Cormorant = Cormorant_Upright({
   subsets: ["latin"],
 });
 
-function HeroText() {
+function HeroText({ headerText }: { headerText: string }) {
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -20,7 +20,7 @@ function HeroText() {
       <h2
         className={`${Cormorant.className} text-[90px] max-w-md leading-none text-[#DCCA87]`}
       >
-        The key to Fine dining
+        {headerText}
       </h2>
       <p className="text-[#AAAAAA] max-w-md tracking-wide !leading-7">
         Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat

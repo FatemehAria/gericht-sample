@@ -1,4 +1,31 @@
 import images from './images';
+import First from "@/public/first_slide.svg";
+import Second from "@/public/02.png";
+import Third from "@/public/03.png";
+import Fourth from "@/public/04.png";
+
+export const SliderInfo = [
+  {
+    id: 0,
+    header: "The key to Fine dining",
+    imgSrc: First,
+  },
+  {
+    id: 1,
+    header: "Reserve Your Table Today",
+    imgSrc: Second,
+  },
+  {
+    id: 2,
+    header: "Food That Surprise You",
+    imgSrc: Third,
+  },
+  {
+    id: 3,
+    header: "Love The Original Taste",
+    imgSrc: Fourth,
+  },
+];
 
 export const wines = [
   {
