@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import HeroText from "./HeroText";
+import HeroImage from "./HeroImage";
 
 function Hero() {
   return (
-    <div>
-        <div></div>
-        
-        <div></div>
+    <div className="grid grid-cols-2 items-center my-5">
+      <HeroText />
+      <HeroImage />
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
