@@ -1,5 +1,27 @@
 export default function Home() {
   return (
-    <main>Home</main>
+    <main>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+      <p>Home</p>
+    </main>
   );
 }

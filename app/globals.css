@@ -20,7 +20,3 @@ a {
   transition: 0.2s ease-out;
   text-decoration: none;
 }
-
-a:hover {
-  border-bottom: 1px solid #e0cc55;
-}
