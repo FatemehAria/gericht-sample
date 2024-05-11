@@ -1,0 +1,13 @@
+.show-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hide-menu {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.menu-transition {
+    transition: all 1s ease;
+}
