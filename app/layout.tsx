@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className="text-white bg-black">
       <body className={OpenSans.className}>
         <Navbar />
-        <div className="w-[80%] mx-auto px-5">{children}</div>
+        <div className="lg:w-[80%] mx-auto lg:px-5">{children}</div>
       </body>
     </html>
   );

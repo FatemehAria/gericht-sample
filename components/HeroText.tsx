@@ -28,7 +28,7 @@ function HeroText({
       <h2
         className={`${Cormorant.className} ${
           active ? "fade-in" : "fade-out"
-        } text-[90px] max-w-md leading-none text-[#DCCA87] hero-text`}
+        } text-[60px] lg:text-[90px] max-w-md leading-none text-[#DCCA87] hero-text`}
       >
         {headerText}
       </h2>
