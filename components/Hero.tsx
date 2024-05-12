@@ -21,7 +21,7 @@ function Hero() {
     >
       {SliderInfo.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="grid grid-cols-2 items-center my-5 px-5">
+          <div className="grid grid-cols-2 items-center my-5">
             <HeroText
               headerText={item.header}
               active={activeSlideIndex === item.id}

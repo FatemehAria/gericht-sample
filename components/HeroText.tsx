@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Spoon from "@/public/spoon.svg";
 import "./herotext.css";
+import HeroButton from "./HeroButton";
 
 const Cormorant = Cormorant_Upright({
   weight: "700",
@@ -37,11 +38,7 @@ function HeroText({
         tellus
       </p>
       <div className="flex justify-start">
-        <button
-          className={`text-black bg-[#DCCA87] ${Cormorant.className} rounded-sm p-2`}
-        >
-          Explore More
-        </button>
+        <HeroButton ButtonText="Explore More"/>
       </div>
     </div>
   );
