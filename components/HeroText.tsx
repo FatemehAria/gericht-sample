@@ -2,13 +2,20 @@ import { Cormorant_Upright } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import Spoon from "@/public/spoon.svg";
+import "./herotext.css";
 
 const Cormorant = Cormorant_Upright({
   weight: "700",
   subsets: ["latin"],
 });
 
-function HeroText({ headerText }: { headerText: string }) {
+function HeroText({
+  headerText,
+  active,
+}: {
+  headerText: string;
+  active: boolean;
+}) {
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -18,7 +25,9 @@ function HeroText({ headerText }: { headerText: string }) {
         <Image src={Spoon} alt="spoon" />
       </div>
       <h2
-        className={`${Cormorant.className} text-[90px] max-w-md leading-none text-[#DCCA87]`}
+        className={`${Cormorant.className} ${
+          active ? "fade-in" : "fade-out"
+        } text-[90px] max-w-md leading-none text-[#DCCA87] hero-text`}
       >
         {headerText}
       </h2>
