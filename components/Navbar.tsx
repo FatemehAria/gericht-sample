@@ -49,7 +49,7 @@ function Navbar() {
           Login / Registration
         </Link>
         <NavbarSeperator />
-        <Link href="" className="hover:border-b hover:border-[#a7bb80]">
+        <Link href="/table-reservation" className="hover:border-b hover:border-[#a7bb80]">
           Book Table
         </Link>
       </div>

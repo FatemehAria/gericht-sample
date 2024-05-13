@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import HeroButton from "./HeroButton";
 import { Cormorant_Upright } from "next/font/google";
 import Spoon from "@/public/spoon.svg";
 import Image from "next/image";
+import "./about-section.css";
+import { useDynamicCss } from "@/hooks/useDynamicCss";
 
 const Cormorant = Cormorant_Upright({
   weight: "600",
@@ -21,20 +24,23 @@ function AboutSection({
   rotateValue: string;
   text: string;
   title: string;
-  textAlignment: string;
+  textAlignment: "left" | "right" | "center" | "justify";
   spoonAlignment: string;
 }) {
+  const windowWidth = useDynamicCss();
   return (
     <div
-      className={`flex flex-col justify-center gap-8`}
-      style={{ alignItems: `${flexDirection}` }}
+      className={`flex flex-col justify-center gap-8 z-50`}
+      style={{ alignItems: `${windowWidth < 1024 ? "center" : flexDirection}` }}
     >
       <div
-        className={`flex flex-col gap-1`}
-        style={{ alignItems: `${spoonAlignment}` }}
+        className={`flex flex-col gap-1 w-full`}
+        style={{
+          alignItems: `${windowWidth < 1024 ? "center" : spoonAlignment}`,
+        }}
       >
         <h3
-          className={`${Cormorant.className} text-[64px] !leading-none text-[#DCCA87]`}
+          className={`${Cormorant.className} lg:text-[64px] !leading-none text-[#DCCA87] py-3`}
         >
           {title}
         </h3>
@@ -45,8 +51,10 @@ function AboutSection({
         />
       </div>
       <p
-        className={`text-[#AAAAAA] !leading-7 text-[16px] max-w-md`}
-        style={{ textAlign: `${textAlignment}` }}
+        className={`text-[#AAAAAA] !leading-7 lg:text-[16px]  max-w-md px-3 lg:px-0`}
+        style={{
+          textAlign: `${windowWidth < 1024 ? "center" : textAlignment}`,
+        }}
       >
         {text}
       </p>
