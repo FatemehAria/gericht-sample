@@ -21,10 +21,11 @@ function Hero() {
       speed={3000}
       onSlideChange={(swiper) => setActiveSlideIndex(swiper.activeIndex)}
       spaceBetween={10}
+      className="bg-black"
     >
       {SliderInfo.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-2 items-center my-5 lg:px-3">
+          <div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-2 items-center my-5 lg:px-5 lg:w-[80%] mx-auto">
             <HeroText
               headerText={item.header}
               active={activeSlideIndex === item.id}

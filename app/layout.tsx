@@ -19,10 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="text-white bg-black">
+    <html lang="en" className="text-white bg-about-background bg-no-repeat bg-center bg-cover">
       <body className={OpenSans.className}>
         <Navbar />
-        <div className="lg:w-[80%] mx-auto lg:px-5">{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   );

@@ -2,17 +2,11 @@ import Image from "next/image";
 import React from "react";
 import G from "@/assets/G.png";
 import Knife from "@/assets/knife.png";
-import { Cormorant_Upright } from "next/font/google";
 import AboutSection from "./AboutSection";
-
-const Cormorant = Cormorant_Upright({
-  weight: "600",
-  subsets: ["latin"],
-});
 
 function About() {
   return (
-    <div className="bg-about-background bg-no-repeat bg-center bg-cover grid grid-cols-1 lg:grid-cols-3 absolute lg:w-[100vw] left-0 lg:h-[700px] tracking-wide">
+    <div className="grid grid-cols-1 lg:grid-cols-3 lg:h-[700px] tracking-wide">
       <AboutSection
         flexDirection="flex-end"
         rotateValue="0"
