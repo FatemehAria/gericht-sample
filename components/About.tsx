@@ -6,7 +6,7 @@ import AboutSection from "./AboutSection";
 
 function About() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 lg:h-[700px] tracking-wide">
+    <div className="grid grid-cols-1 lg:grid-cols-3 lg:h-[700px] tracking-wide my-5">
       <AboutSection
         flexDirection="flex-end"
         rotateValue="0"
