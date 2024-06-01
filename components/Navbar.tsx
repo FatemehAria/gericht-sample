@@ -7,7 +7,7 @@ import NavbarListSmall from "./NavbarListSmall";
 
 function Navbar() {
   return (
-    <nav className="flex flex-row justify-between lg:justify-around items-center py-8 text-base whitespace-nowrap bg-black">
+    <nav className="flex flex-row justify-between lg:justify-around items-center py-8 text-base whitespace-nowrap bg-black px-5 lg:px-0">
       <Image src={Logo} alt="logo" className="w-[100px] lg:w-[189px]" />
       <NavbarListSmall />
       <div className="hidden lg:flex flex-row w-[30%] items-center justify-between text-[#a7bb80]">
@@ -42,7 +42,7 @@ function Navbar() {
           Landing
         </Link>
       </div>
-      <div className="hidden lg:flex flex-row w-[20%] justify-between items-center relative">
+      <div className="hidden lg:flex flex-row w-[20%] flex-wrap justify-between items-center relative">
         <Link href="" className="hover:border-b hover:border-[#a7bb80]">
           Login / Registration
         </Link>

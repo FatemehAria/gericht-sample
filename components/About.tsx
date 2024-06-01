@@ -17,11 +17,11 @@ function About() {
         textAlignment="right"
         spoonAlignment="flex-end"
       />
-      <div className="relative my-[200px] lg:my-0">
+      <div className="relative my-[320px] lg:my-0">
         <Image
           src={G}
           alt="gericht"
-          className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2"
+          className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
           width={300}
         />
         <Image

@@ -2,6 +2,7 @@
 import { Cormorant_Upright } from "next/font/google";
 import React, { useState } from "react";
 import "./menu.css";
+
 const Cormorant = Cormorant_Upright({
   weight: "700",
   subsets: ["latin"],

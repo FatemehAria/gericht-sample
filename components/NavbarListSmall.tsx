@@ -11,7 +11,7 @@ function NavbarListSmall() {
   const pathname = usePathname();
 
   return (
-    <div className="lg:hidden w-full">
+    <div className="lg:hidden w-full z-50">
       <div
         className={`absolute right-0 top-5 flex flex-col items-end w-full bg-black text-white h-screen p-3 ${
           showMenu ? "show-menu menu-transition" : "hide-menu menu-transition"

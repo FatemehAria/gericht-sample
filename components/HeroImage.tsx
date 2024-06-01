@@ -13,8 +13,7 @@ function HeroImage({ imgSrc }: { imgSrc: string }) {
       <Image
         src={imgSrc}
         alt="1"
-        className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-1/2 lg:-translate-x-1/2"
-        width={530}
+        className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:w-[650px] lg:h-[550px] w-full"
       />
     </div>
   );

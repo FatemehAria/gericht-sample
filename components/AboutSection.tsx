@@ -31,12 +31,12 @@ function AboutSection({
   return (
     <div
       className={`flex flex-col justify-center gap-8 z-50`}
-      style={{ alignItems: `${windowWidth < 1024 ? "center" : flexDirection}` }}
+      style={{ alignItems: `${(windowWidth !== null &&  windowWidth < 1024) ? "center" : flexDirection}` }}
     >
       <div
         className={`flex flex-col gap-1 w-full`}
         style={{
-          alignItems: `${windowWidth < 1024 ? "center" : spoonAlignment}`,
+          alignItems: `${(windowWidth !== null &&  windowWidth < 1024) ? "center" : spoonAlignment}`,
         }}
       >
         <h3
@@ -53,7 +53,7 @@ function AboutSection({
       <p
         className={`text-[#AAAAAA] !leading-7 lg:text-[16px]  max-w-md px-3 lg:px-0`}
         style={{
-          textAlign: `${windowWidth < 1024 ? "center" : textAlignment}`,
+          textAlign: `${(windowWidth !== null &&  windowWidth < 1024) ? "center" : textAlignment}`,
         }}
       >
         {text}
