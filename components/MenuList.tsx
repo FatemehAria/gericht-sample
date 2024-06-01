@@ -14,7 +14,7 @@ const Cormorant = Cormorant_Upright({
 
 function MenuList() {
   return (
-    <div className="bg-[#0e0e0e] p-12">
+    <div className="bg-[#0e0e0e] p-3 lg:p-12">
       <TitlesAndSubs sub="Today's Special" title="Menu That Fits You Palatte" />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="overflow-hidden flex flex-col justify-evenly">
