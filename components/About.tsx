@@ -40,7 +40,7 @@ function About() {
         title="Our History"
         textAlignment="left"
         spoonAlignment="flex-start"
-      />
+      /> 
     </div>
   );
 }
