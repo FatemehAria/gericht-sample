@@ -40,7 +40,7 @@ function MenuList() {
         </div>
         <div className="overflow-hidden flex flex-col justify-evenly">
           <p className={`flex justify-center text-5xl lg:text-6xl !leading-none ${Cormorant.className}`}>Cocktails</p>
-          <div className="flex flex-col justify-around h-[70%]">
+          <div className="flex flex-col justify-around lg:h-[70%]">
             {cocktails.map((item) => (
               <MenuListItems
                 price={item.price}
