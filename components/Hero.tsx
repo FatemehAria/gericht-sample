@@ -12,7 +12,6 @@ import { useDynamicCss } from "@/hooks/useDynamicCss";
 function Hero() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const windowWidth = useDynamicCss();
-
   return (
     <Swiper
       modules={[Navigation, Autoplay]}

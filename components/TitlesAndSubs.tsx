@@ -7,10 +7,18 @@ const Cormorant = Cormorant_Upright({
   weight: "400",
   subsets: ["latin"],
 });
-function TitlesAndSubs({ title, sub }: { title: string; sub: string }) {
+function TitlesAndSubs({
+  title,
+  sub,
+  direction,
+}: {
+  title: string;
+  sub: string;
+  direction?: string;
+}) {
   return (
     <div
-      className={`flex flex-col justify-center items-center font-bold text-[20px] lg:text-[23px] gap-2 ${Cormorant.className}`}
+      className={`flex flex-col justify-center items-${direction ? direction : "center"} font-bold text-[20px] lg:text-[23px] gap-2 ${Cormorant.className}`}
     >
       <p className="text-white">{title}</p>
       <Image src={Spoon} alt="spoon" />

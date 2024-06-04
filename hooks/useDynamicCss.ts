@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const useDynamicCss = () => {
-  const [windowWidth, setWindowWidth] = useState<null | number>(null);
+  const [windowWidth, setWindowWidth] = useState<null | number>(800);
 
   useEffect(() => {
     const handleResize = () => {
