@@ -1,8 +1,11 @@
-import images from './images';
 import First from "@/public/first_slide.svg";
 import Second from "@/public/02.png";
 import Third from "@/public/03.png";
 import Fourth from "@/public/04.png";
+import Brooklyn from "@/public/brooklyn-simmons.png";
+import Jane from "@/public/jane cooper.png";
+import Robert from "@/public/robert-fox.png";
+import Wade from "@/public/wade-warren.png";
 
 export const SliderInfo = [
   {
@@ -29,79 +32,79 @@ export const SliderInfo = [
 
 export const wines = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: "Chapel Hill Shiraz",
+    price: "$56",
+    tags: "AU | Bottle",
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: "Catena Malbee",
+    price: "$59",
+    tags: "AU | Bottle",
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    title: "La Vieillw Rose",
+    price: "$44",
+    tags: "FR | 750 ml",
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
+    title: "Rhino Pale Ale",
+    price: "$31",
+    tags: "CA | 750 ml",
   },
   {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    title: "Irish Guinness",
+    price: "$26",
+    tags: "IE | 750 ml",
   },
 ];
 
 export const cocktails = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    title: "Aperol Sprtiz",
+    price: "$20",
+    tags: "Aperol | Villa Marchesi prosecco | soda | 30 ml",
   },
   {
     title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    price: "$16",
+    tags: "Dark rum | Ginger beer | Slice of lime",
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    title: "Daiquiri",
+    price: "$10",
+    tags: "Rum | Citrus juice | Sugar",
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    title: "Old Fashioned",
+    price: "$31",
+    tags: "Bourbon | Brown sugar | Angostura Bitters",
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    title: "Negroni",
+    price: "$26",
+    tags: "Gin | Sweet Vermouth | Campari | Orange garnish",
   },
 ];
 
-export const awards = [
+export const comments = [
   {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    imgUrl: Wade,
+    name: "Wade Warren",
+    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },
   {
-    imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    imgUrl: Brooklyn,
+    name: "Brooklyn Simmons",
+    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },
   {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    imgUrl: Robert,
+    name: "Robert Fox",
+    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },
   {
-    imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    imgUrl: Jane,
+    name: "Jane Cooper",
+    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
   },
 ];

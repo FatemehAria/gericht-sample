@@ -50,7 +50,7 @@ function AboutSection({
         }}
       >
         <h3
-          className={`${Cormorant.className} lg:text-[64px] !leading-none text-[#DCCA87] py-3`}
+          className={`${Cormorant.className} lg:text-[64px] !leading-none text-[#DCCA87] py-3 whitespace-nowrap`}
         >
           {title}
         </h3>

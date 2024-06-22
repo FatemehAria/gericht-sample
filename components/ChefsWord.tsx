@@ -18,7 +18,7 @@ const OpenSans = Open_Sans({
 
 function ChefsWord() {
   return (
-    <div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-2 items-center w-[90%] mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 items-center w-[90%] mx-auto">
       <Image src={Chef} alt="chef" width={589} />
 
       <div className="flex flex-col gap-8">

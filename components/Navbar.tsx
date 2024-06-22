@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Logo from "@/public/Logo.svg";
 import Link from "next/link";
+import "./navbar.css"
 import NavbarSeperator from "./NavbarSeperator";
 import NavbarListSmall from "./NavbarListSmall";
 
@@ -13,43 +14,43 @@ function Navbar() {
       <div className="hidden lg:flex flex-row w-[30%] items-center justify-between text-[#a7bb80]">
         <Link
           href=""
-          className="hover:border-b hover:border-white hover:text-white"
+          className="hover-underline-navbar"
         >
           Home
         </Link>
         <Link
           href=""
-          className="hover:border-b hover:border-white hover:text-white"
+          className="hover-underline-navbar"
         >
           Pages
         </Link>
         <Link
           href=""
-          className="hover:border-b hover:border-white hover:text-white"
+          className="hover-underline-navbar"
         >
           Contact Us
         </Link>
         <Link
           href=""
-          className="hover:border-b hover:border-white hover:text-white"
+          className="hover-underline-navbar"
         >
           Blog
         </Link>
         <Link
           href=""
-          className="hover:border-b hover:border-white hover:text-white"
+          className="hover-underline-navbar"
         >
           Landing
         </Link>
       </div>
       <div className="hidden lg:flex flex-row w-[20%] flex-wrap justify-between items-center relative">
-        <Link href="" className="hover:border-b hover:border-[#a7bb80]">
+        <Link href="" className="hover-underline-navbar-login">
           Login / Registration
         </Link>
         <NavbarSeperator />
         <Link
           href="/table-reservation"
-          className="hover:border-b hover:border-[#a7bb80]"
+          className="hover-underline-navbar-login"
         >
           Book Table
         </Link>

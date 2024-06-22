@@ -28,7 +28,7 @@ function Menu() {
           backgroundRepeat: "no-repeat",
           transition: "background-image 0.5s ease",
           position: "relative",
-          padding:"0 3rem"
+          padding:"0 5%"
         }}
       >
         <div className="absolute top-1/2 -translate-y-1/2 text-[35px] tracking-wide">
