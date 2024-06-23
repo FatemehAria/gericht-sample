@@ -6,6 +6,10 @@ import Brooklyn from "@/public/brooklyn-simmons.png";
 import Jane from "@/public/jane cooper.png";
 import Robert from "@/public/robert-fox.png";
 import Wade from "@/public/wade-warren.png";
+import Gallery01 from "@/public/gallery01.png";
+import Gallery02 from "@/public/gallery02.png";
+import Gallery03 from "@/public/gallery03.png";
+import Gallery04 from "@/public/gallery04.png";
 
 export const SliderInfo = [
   {
@@ -106,5 +110,40 @@ export const comments = [
     imgUrl: Jane,
     name: "Jane Cooper",
     subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+  },
+];
+
+export const PhotoGallerySliderInfo = [
+  {
+    id: 0,
+    imgSrc: Gallery01,
+  },
+  {
+    id: 1,
+    imgSrc: Gallery02,
+  },
+  {
+    id: 2,
+    imgSrc: Gallery03,
+  },
+  {
+    id: 3,
+    imgSrc: Gallery04,
+  },
+  {
+    id: 4,
+    imgSrc: Gallery01,
+  },
+  {
+    id: 5,
+    imgSrc: Gallery02,
+  },
+  {
+    id: 6,
+    imgSrc: Gallery03,
+  },
+  {
+    id: 7,
+    imgSrc: Gallery04,
   },
 ];

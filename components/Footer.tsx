@@ -17,7 +17,7 @@ const OpenSans = Open_Sans({
 });
 function Footer() {
   return (
-    <div className="bg-black mt-[3%] py-[3%] grid grid-cols-1 gap-5">
+    <div className="py-[3%] grid grid-cols-1 gap-5">
       <div className="grid grid-cols-1 gap-5 lg:gap-0 md:grid-cols-3 justify-stretch text-center !leading-none">
         <div className="flex flex-col gap-8 md:order-1">
           <p className={`${Cormorant.className} text-[32px]`}>Contact Us</p>
