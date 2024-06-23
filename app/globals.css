@@ -78,6 +78,7 @@ a {
   width: 100% !important;
   transition: all 1s ease;
 }
+
 /* loading */
 .loader-container {
   display: flex;
@@ -92,14 +93,23 @@ a {
 
 @keyframes zoom-in-zoom-out {
   0% {
-      transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 
   50% {
-      transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
   }
 
   100% {
-      transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .swiper-button-prev{
+    display: none !important;
+  }
+  .swiper-button-next{
+    display: none !important;
   }
 }

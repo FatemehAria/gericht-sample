@@ -7,16 +7,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useDynamicCss } from "@/hooks/useDynamicCss";
 
 function Hero() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-  const windowWidth = useDynamicCss();
   return (
     <Swiper
       modules={[Navigation, Autoplay]}
-      navigation={(windowWidth !== null && windowWidth >= 1024) ? true : false}
-      autoplay={(windowWidth !== null &&  windowWidth < 1024) ? true : false}
+      autoplay
+      loop
+      navigation
       slidesPerView={1}
       speed={3000}
       onSlideChange={(swiper) => setActiveSlideIndex(swiper.activeIndex)}

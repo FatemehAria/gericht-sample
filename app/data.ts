@@ -20,7 +20,7 @@ export const SliderInfo = [
   },
   {
     id: 2,
-    header: "Food That Surprise You",
+    header: "Food That Surprises You",
     imgSrc: Third,
   },
   {

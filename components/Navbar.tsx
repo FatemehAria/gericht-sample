@@ -2,44 +2,31 @@ import Image from "next/image";
 import React from "react";
 import Logo from "@/public/Logo.svg";
 import Link from "next/link";
-import "./navbar.css"
+import "./navbar.css";
 import NavbarSeperator from "./NavbarSeperator";
 import NavbarListSmall from "./NavbarListSmall";
 
 function Navbar() {
   return (
     <nav className="flex flex-row justify-between lg:justify-around items-center py-8 text-base whitespace-nowrap bg-black px-5 lg:px-0">
-      <Image src={Logo} alt="logo" className="w-[100px] lg:w-[189px]" />
+      <Link href="/">
+        <Image src={Logo} alt="logo" className="w-[100px] lg:w-[189px]" />
+      </Link>
       <NavbarListSmall />
       <div className="hidden lg:flex flex-row w-[30%] items-center justify-between text-[#a7bb80]">
-        <Link
-          href=""
-          className="hover-underline-navbar"
-        >
+        <Link href="" className="hover-underline-navbar">
           Home
         </Link>
-        <Link
-          href=""
-          className="hover-underline-navbar"
-        >
+        <Link href="" className="hover-underline-navbar">
           Pages
         </Link>
-        <Link
-          href=""
-          className="hover-underline-navbar"
-        >
+        <Link href="" className="hover-underline-navbar">
           Contact Us
         </Link>
-        <Link
-          href=""
-          className="hover-underline-navbar"
-        >
+        <Link href="" className="hover-underline-navbar">
           Blog
         </Link>
-        <Link
-          href=""
-          className="hover-underline-navbar"
-        >
+        <Link href="" className="hover-underline-navbar">
           Landing
         </Link>
       </div>
